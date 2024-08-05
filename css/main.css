@@ -6,9 +6,10 @@
 
 /* Pallete */
 :root{
-    --primary-color: #CA434A;
+    --primary-color: #ca434a;
     --second-color: #FC1722;
     --third-color: #f09819;
+    --fourth-color: #737373;
 }
 
 *{
@@ -22,8 +23,8 @@ a{
 }
 
 body{
-    background: linear-gradient(#FFFFFF, #737373);
     margin: 0 0;
+    background: linear-gradient(#fff 20%, var(--fourth-color) 45% , #fff);
 }
 
 /* Header Style */
@@ -66,8 +67,7 @@ body{
 
 .controls ul{
     justify-self: flex-end;
-    margin-right: 4rem;
-    width: 30%;
+    padding-right: 5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -108,8 +108,7 @@ body{
 
 main{
     display: grid;
-    margin: 8rem 0;
-    padding: 0 5rem;
+    padding: 15% 5rem;
 
     grid-template:
         "a b" 10rem
@@ -119,6 +118,8 @@ main{
 
     justify-items: center;
     align-items: center;
+
+   /*  background: linear-gradient(#FFFFFF 60%, var(--fourth-color) 100%); */
 
 }
 
@@ -225,4 +226,122 @@ main h2:nth-child(n+2){
 
 #almacen-ca{
     align-self:self-end;
+}
+
+/* Slider */
+
+.slider{
+    display: flex;
+    width:65%;
+    margin: 4rem 0 2rem 17.5%;
+
+}
+
+.slider img:nth-child(-n+3){
+    width: 100%;
+}
+
+.Hiace-descuentos{
+    display: none;
+}
+.Maletas-descuentos{
+    display: block;
+}
+.Samsung-descuentos{
+    display: none;
+}
+
+.Prev{
+    position: absolute;
+    
+    height: 2rem;
+    width: 2rem;
+    object-fit:scale-down;
+}
+
+.Next{
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+}
+
+/* Info */
+
+.cards{
+    display: flex;
+    flex-flow: wrap row;
+    width: 65%;
+    margin: 0 0 4rem 25%;
+    gap: 2rem;
+}
+
+.card-info{
+    display: grid;
+    grid-template: 
+        "a ." 2rem
+        "a b" 14rem
+        "a ." 2rem / 60% 40%;
+    align-items: center;
+}
+
+.card-1{
+    grid-area: a;
+    height: 90%;
+    width: 72%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+
+.info{
+    grid-area: b;
+    display: grid;
+    background-color: #fff;
+    grid-template:
+        "a b " 2rem
+        ". c " 10rem
+        / 10% 90%;
+    
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        border-radius: 0.5rem;
+        padding: 15px 2rem 15px 2rem;
+        margin: 5% 0 5% 0;
+
+    position: relative;
+    right: 45%;
+    z-index: -1;
+    
+}
+
+.info-img{
+    grid-area: a;
+    align-self: center;
+    filter: brightness(0) saturate(100%) invert(26%) sepia(90%) saturate(1031%) hue-rotate(328deg) brightness(110%) contrast(90%);
+}
+
+.info h4{
+    grid-area: b;
+    align-self: center;
+}
+
+.info p{
+    grid-area: c;
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
+    overflow-y: scroll;
+}
+
+
+
+
+
+.social-net img{
+    width: 10px;
+}
+
+.siman-logo-footer img{
+    width: 25%;
 }
