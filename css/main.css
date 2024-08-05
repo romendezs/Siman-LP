@@ -335,13 +335,45 @@ main h2:nth-child(n+2){
 }
 
 
+/* Footer */
+
+footer{
+    display: grid;
+    grid-template:8rem / 25% 50% 25%;
+    background-color: #fff;
+    justify-items: center;
+    align-items: center;
+}
+
+.telefono-email{
+    font-size: 0.75rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-net{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2%;
+    
+}
 
 
+.Contactos{
+    width: 100%;
+    text-align: center;
+}
+
+.social-net a{
+    width: 5%;
+}
 
 .social-net img{
-    width: 10px;
+    width: 100%;
 }
 
 .siman-logo-footer img{
-    width: 25%;
+    width: 80%;
+    height: auto;
 }
