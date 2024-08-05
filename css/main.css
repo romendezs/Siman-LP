@@ -8,6 +8,7 @@
 :root{
     --primary-color: #CA434A;
     --second-color: #FC1722;
+    --third-color: #f09819;
 }
 
 *{
@@ -24,6 +25,8 @@ body{
     background: linear-gradient(#FFFFFF, #737373);
     margin: 0 0;
 }
+
+/* Header Style */
 
 .home-header{
     display: flex;
@@ -50,6 +53,7 @@ body{
 .controls{
     width: 100%;
     display: grid;
+    align-items: center;
     grid-template: 1fr / 1fr 5fr ;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     
@@ -70,3 +74,155 @@ body{
     gap: 10px;
 }
 
+.suscripcion{
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px var(--third-color);
+  background-image: linear-gradient(45deg, var(--primary-color) 0%, var(--third-color)  51%, var(--second-color)  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.suscripcion:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+  
+.suscripcion:active {
+    transform: scale(0.95);
+  }
+
+
+/* Main Style */
+
+main{
+    display: grid;
+    margin: 8rem 0;
+    padding: 0 5rem;
+
+    grid-template:
+        "a b" 10rem
+        "a c" 4rem
+        "a d" 2rem
+        / 40% 60%;
+
+    justify-items: center;
+    align-items: center;
+
+}
+
+.subscription-aside{
+    grid-area: a;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.subscription-aside h2{
+    color: var(--primary-color);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.subscription-aside p{
+    width: 100%;
+    margin: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.subscription-form{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem
+}
+
+.subscription-form input{
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.submit-subscription{
+    margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px var(--third-color);
+  background-image: linear-gradient(45deg, var(--primary-color) 0%, var(--third-color)  51%, var(--second-color)  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.submit-subscription:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+  
+  .submit-subscription:active {
+    transform: scale(0.95);
+  }
+
+  .email-subscription{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding: 0 10px;
+  }
+
+  .email-subscription:hover{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding: 0 10px;
+  }
+
+  .email-subscription{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding: 0 10px;
+  }
+
+.subscription-form h4{
+    margin: 0;
+}
+
+main img{
+    width: 70%;
+    height: fit-content;
+}
+
+
+main h2:nth-child(n+2){
+    margin: 0;
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 1.5rem;
+    
+}
+
+#almacen-ca{
+    align-self:self-end;
+}
