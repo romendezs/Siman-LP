@@ -24,7 +24,8 @@ a{
 
 body{
     margin: 0 0;
-    background: linear-gradient(#fff 20%, var(--fourth-color) 45% , #fff);
+    background: linear-gradient(#fff 20%, var(--primary-color) 45% , #fff 60%);
+    overflow-x: hidden;
 }
 
 /* Header Style */
@@ -57,6 +58,8 @@ body{
     align-items: center;
     grid-template: 1fr / 1fr 5fr ;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    position: sticky;
+    top:10px;
     
 }
 
@@ -151,7 +154,9 @@ main{
     width: 70%;
     display: flex;
     flex-flow: row wrap;
-    gap: 1rem
+    gap: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
 }
 
 .subscription-form input{
@@ -228,12 +233,20 @@ main h2:nth-child(n+2){
     align-self:self-end;
 }
 
+
+.slider-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Slider */
 
 .slider{
     display: flex;
-    width:65%;
-    margin: 4rem 0 2rem 17.5%;
+    width:80%;
+    margin: 4rem 0 2rem 0;
 
 }
 
@@ -270,8 +283,8 @@ main h2:nth-child(n+2){
 .cards{
     display: flex;
     flex-flow: wrap row;
-    width: 65%;
-    margin: 0 0 4rem 25%;
+    width: 80%;
+    margin: 0 0 4rem 0;
     gap: 2rem;
 }
 
@@ -280,17 +293,20 @@ main h2:nth-child(n+2){
     grid-template: 
         "a ." 2rem
         "a b" 14rem
-        "a ." 2rem / 60% 40%;
+        "a ." 2rem / 50% 50%;
     align-items: center;
+    padding-right: 1rem;
 }
 
 .card-1{
     grid-area: a;
     height: 90%;
-    width: 72%;
+    width: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: relative;
+    right: -2%;
 }
 
 
@@ -299,17 +315,15 @@ main h2:nth-child(n+2){
     display: grid;
     background-color: #fff;
     grid-template:
-        "a b " 2rem
-        ". c " 10rem
-        / 10% 90%;
+        "a b " 4rem
+        ". c " 8rem
+        / 5% 90%;
     
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         border-radius: 0.5rem;
         padding: 15px 2rem 15px 2rem;
         margin: 5% 0 5% 0;
 
-    position: relative;
-    right: 45%;
     z-index: -1;
     
 }
@@ -343,6 +357,7 @@ footer{
     background-color: #fff;
     justify-items: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .telefono-email{
