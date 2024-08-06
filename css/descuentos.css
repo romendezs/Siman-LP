@@ -1,0 +1,152 @@
+/* Tenor Sans */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tenor+Sans&display=swap');
+
+/* Julius Sans One */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Julius+Sans+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tenor+Sans&display=swap');
+
+/* Pallete */
+:root{
+    --primary-color: #ca434a;
+    --second-color: #FC1722;
+    --third-color: #f09819;
+    --fourth-color: #737373;
+}
+
+*{
+    font-family: "Tenor Sans" ;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    margin: 0 0;
+    overflow-x: hidden;
+}
+
+/* Header Style */
+
+.home-header{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+
+}
+
+.announcement{
+    width: 80%;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem;
+
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    border-radius: 0.7rem;
+    background: linear-gradient(to right, var(--second-color), var(--primary-color));
+    color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.controls{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template: 1fr / 1fr 5fr ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    position: sticky;
+    top:10px;
+    
+}
+
+.controls img{
+    width: 60%;
+    margin-left: 2rem;
+}
+
+.controls ul{
+    justify-self: flex-end;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.suscripcion{
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px var(--third-color);
+  background-image: linear-gradient(45deg, var(--primary-color) 0%, var(--third-color)  51%, var(--second-color)  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.suscripcion:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+  
+.suscripcion:active {
+    transform: scale(0.95);
+  }
+
+
+/* Footer */
+
+  
+footer{
+    display: grid;
+    grid-template:8rem / 25% 50% 25%;
+    background-color: #fff;
+    justify-items: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.telefono-email{
+    font-size: 0.75rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-net{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2%;
+    
+}
+
+
+.Contactos{
+    width: 100%;
+    text-align: center;
+}
+
+.social-net a{
+    width: 5%;
+}
+
+.social-net img{
+    width: 100%;
+}
+
+.siman-logo-footer img{
+    width: 80%;
+    height: auto;
+}
