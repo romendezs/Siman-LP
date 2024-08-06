@@ -25,7 +25,9 @@ a{
 body{
     margin: 0 0;
     overflow-x: hidden;
+    background: linear-gradient(#fff 25%, var(--fourth-color));
 }
+
 
 /* Header Style */
 
@@ -104,6 +106,225 @@ body{
 .suscripcion:active {
     transform: scale(0.95);
   }
+
+
+
+.descuentos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 4rem;
+    justify-content: center;
+}  
+
+/* Tools bar*/
+.tools{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tools h1{
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+    font-family: Julius Sans One;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.search-bar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input{
+    width: 90%;
+    height: 2rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.search-bar img{
+    position: relative;
+    right: 2.5rem;
+    height: 1.5rem;
+}
+
+.filters{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.filters button {
+    background-color: transparent;
+    border: none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    color: var(--fourth-color);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 90%;
+    font-weight: 600;
+    margin: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+.filters button:disabled {
+    pointer-events: none;
+}
+
+.filters button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.filters button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* Products */
+
+.productos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0 2rem 0 ;
+}
+
+.item{
+    width: 22%;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 0.5rem;
+    padding: 2rem 1rem 2rem 1rem;
+    box-sizing: border-box;
+    background-color: #fff;
+
+}
+
+.item img{
+    height: 70%;
+    width:auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.item h4{
+    color: var(--primary-color);
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+    margin: 0;
+    font-weight: 500;
+
+}
+
+.prices{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+}
+
+.past-price{
+    width: fit-content;
+    color: #737373;
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    position: relative;
+    margin: 0;
+    font-weight: 500;
+}
+
+.current-price{
+    width: fit-content;
+    margin: 0;
+    font-weight: 600;
+}
+
+.percent{
+    width: 100%;
+    margin: 0 0 1rem 0;
+    color: var(--second-color);
+    font-size: 80%;
+}
+
+/* Pages control */
+
+.pages{
+    display: flex;
+    gap: 5px;
+}
+
+.pages button {
+    background-color: transparent;
+    border: none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 90%;
+    font-weight: 600;
+    margin: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+.pages button:disabled {
+    pointer-events: none;
+}
+
+.pages button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.pages button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.pages img{
+    width: 1rem;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(277deg) brightness(103%) contrast(104%);
+}
+
+.pages p{
+    color: #fff;
+}
+
 
 
 /* Footer */
