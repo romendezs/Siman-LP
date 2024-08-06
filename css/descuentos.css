@@ -332,14 +332,114 @@ body{
   
 footer{
     display: grid;
-    grid-template:8rem / 25% 50% 25%;
+    grid-template:
+    "a b" 45%
+    "a c" 15%
+    "a d" 40%
+    / 60% 40%;
     background-color: #fff;
     justify-items: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.subscription-aside{
+    grid-area: a;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 2.5rem 0 2.5rem 0;
+    box-sizing: border-box;
+    
+}
+
+.subscription-aside h2{
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.subscription-aside p{
+    color: #fff;
+    width: 100%;
+    margin: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.subscription-form{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 1rem;
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.subscription-form input{
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.submit-subscription{
+    margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px var(--third-color);
+  background-image: linear-gradient(45deg, var(--primary-color) 0%, var(--third-color)  51%, var(--second-color)  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.submit-subscription:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+  
+  .submit-subscription:active {
+    transform: scale(0.95);
+  }
+
+  .email-subscription{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding: 0 10px;
+  }
+
+  .email-subscription:hover{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding: 0 10px;
+  }
+
+  .email-subscription{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding: 0 10px;
+  }
+
+.subscription-form h4{
+    margin: 0;
 }
 
 .telefono-email{
+    grid-area: c;
     font-size: 0.75rem;
     padding: 1rem;
     text-align: center;
@@ -368,6 +468,7 @@ footer{
 }
 
 .siman-logo-footer img{
-    width: 80%;
-    height: auto;
+    height: 4rem;
+    object-fit: cover;
+    overflow: hidden;
 }
