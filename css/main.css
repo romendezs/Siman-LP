@@ -24,8 +24,8 @@ a{
 
 body{
     margin: 0 0;
-    background: linear-gradient(#fff 20%, var(--primary-color) 45% , #fff 60%);
     overflow-x: hidden;
+    background: radial-gradient(at right bottom, var(--primary-color), #FFFFFF);
 }
 
 /* Header Style */
@@ -60,7 +60,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     position: sticky;
     top:10px;
-    
+    background-color: #fff;
 }
 
 .controls img{
@@ -74,7 +74,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 10px;
+    gap: 3rem;
 }
 
 .suscripcion{
@@ -370,7 +370,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 2%;
+    column-gap: 2rem;
     
 }
 
@@ -385,10 +385,10 @@ footer{
 }
 
 .social-net img{
-    width: 100%;
+    width: 2rem;
 }
 
 .siman-logo-footer img{
-    width: 80%;
+    width: 10rem;
     height: auto;
 }
