@@ -1,0 +1,394 @@
+/* Tenor Sans */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tenor+Sans&display=swap');
+
+/* Julius Sans One */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Julius+Sans+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tenor+Sans&display=swap');
+
+/* Pallete */
+:root{
+    --primary-color: #ca434a;
+    --second-color: #FC1722;
+    --third-color: #f09819;
+    --fourth-color: #737373;
+}
+
+*{
+    font-family: "Tenor Sans" ;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    margin: 0 0;
+    background: linear-gradient(#fff 20%, var(--primary-color) 45% , #fff 60%);
+    overflow-x: hidden;
+}
+
+/* Header Style */
+
+.home-header{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+
+}
+
+.announcement{
+    width: 80%;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem;
+
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    border-radius: 0.7rem;
+    background: linear-gradient(to right, var(--second-color), var(--primary-color));
+    color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.controls{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template: 1fr / 1fr 5fr ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    position: sticky;
+    top:10px;
+    
+}
+
+.controls img{
+    width: 60%;
+    margin-left: 2rem;
+}
+
+.controls ul{
+    justify-self: flex-end;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.suscripcion{
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px var(--third-color);
+  background-image: linear-gradient(45deg, var(--primary-color) 0%, var(--third-color)  51%, var(--second-color)  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.suscripcion:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+  
+.suscripcion:active {
+    transform: scale(0.95);
+  }
+
+
+/* Main Style */
+
+main{
+    display: grid;
+    padding: 15% 5rem;
+
+    grid-template:
+        "a b" 10rem
+        "a c" 4rem
+        "a d" 2rem
+        / 40% 60%;
+
+    justify-items: center;
+    align-items: center;
+
+   /*  background: linear-gradient(#FFFFFF 60%, var(--fourth-color) 100%); */
+
+}
+
+.subscription-aside{
+    grid-area: a;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.subscription-aside h2{
+    color: var(--primary-color);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.subscription-aside p{
+    width: 100%;
+    margin: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.subscription-form{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.subscription-form input{
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.submit-subscription{
+    margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px var(--third-color);
+  background-image: linear-gradient(45deg, var(--primary-color) 0%, var(--third-color)  51%, var(--second-color)  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.submit-subscription:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+  
+  .submit-subscription:active {
+    transform: scale(0.95);
+  }
+
+  .email-subscription{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding: 0 10px;
+  }
+
+  .email-subscription:hover{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding: 0 10px;
+  }
+
+  .email-subscription{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding: 0 10px;
+  }
+
+.subscription-form h4{
+    margin: 0;
+}
+
+main img{
+    width: 70%;
+    height: fit-content;
+}
+
+
+main h2:nth-child(n+2){
+    margin: 0;
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 1.5rem;
+    
+}
+
+#almacen-ca{
+    align-self:self-end;
+}
+
+
+.slider-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Slider */
+
+.slider{
+    display: flex;
+    width:80%;
+    margin: 4rem 0 2rem 0;
+
+}
+
+.slider img:nth-child(-n+3){
+    width: 100%;
+}
+
+.Hiace-descuentos{
+    display: none;
+}
+.Maletas-descuentos{
+    display: block;
+}
+.Samsung-descuentos{
+    display: none;
+}
+
+.Prev{
+    position: absolute;
+    
+    height: 2rem;
+    width: 2rem;
+    object-fit:scale-down;
+}
+
+.Next{
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+}
+
+/* Info */
+
+.cards{
+    display: flex;
+    flex-flow: wrap row;
+    width: 80%;
+    margin: 0 0 4rem 0;
+    gap: 2rem;
+}
+
+.card-info{
+    display: grid;
+    grid-template: 
+        "a ." 2rem
+        "a b" 14rem
+        "a ." 2rem / 50% 50%;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+.card-1{
+    grid-area: a;
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    position: relative;
+    right: -2%;
+}
+
+
+.info{
+    grid-area: b;
+    display: grid;
+    background-color: #fff;
+    grid-template:
+        "a b " 4rem
+        ". c " 8rem
+        / 5% 90%;
+    
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        border-radius: 0.5rem;
+        padding: 15px 2rem 15px 2rem;
+        margin: 5% 0 5% 0;
+
+    z-index: -1;
+    
+}
+
+.info-img{
+    grid-area: a;
+    align-self: center;
+    filter: brightness(0) saturate(100%) invert(26%) sepia(90%) saturate(1031%) hue-rotate(328deg) brightness(110%) contrast(90%);
+}
+
+.info h4{
+    grid-area: b;
+    align-self: center;
+}
+
+.info p{
+    grid-area: c;
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
+    overflow-y: scroll;
+}
+
+
+/* Footer */
+
+footer{
+    display: grid;
+    grid-template:8rem / 25% 50% 25%;
+    background-color: #fff;
+    justify-items: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.telefono-email{
+    font-size: 0.75rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-net{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2%;
+    
+}
+
+
+.Contactos{
+    width: 100%;
+    text-align: center;
+}
+
+.social-net a{
+    width: 5%;
+}
+
+.social-net img{
+    width: 100%;
+}
+
+.siman-logo-footer img{
+    width: 80%;
+    height: auto;
+}
