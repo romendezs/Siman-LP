@@ -64,7 +64,11 @@ body{
     
 }
 
-.controls img{
+.controls ul img{
+    display: none;
+}
+
+.siman-logo-header{
     width: 60%;
     margin-left: 2rem;
 }
@@ -398,4 +402,109 @@ footer{
     height: 4rem;
     object-fit: cover;
     overflow: hidden;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) and (orientation: portrait) {
+    
+
+    /* Header */
+    .controls{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .siman-logo-header{
+        margin: 0.5rem 0;
+        height: 2rem;
+        width: auto;
+    }
+    
+    .controls ul{
+        gap: 0;
+        padding: 0;
+    }
+
+    .controls ul :nth-child( n+2){
+        display: none;
+    }
+    
+    .controls ul img{
+        display: block;
+        width: 1.8rem;
+        filter: brightness(0) saturate(100%) invert(26%) sepia(90%) saturate(1031%) hue-rotate(328deg) brightness(110%) contrast(90%);
+        cursor: pointer;
+    }
+
+
+    /* Pasados */
+
+    .pasados h1{
+        text-align: center;
+        margin: 3rem 0 0 0;
+    }
+    
+    .slider{
+        width: 90%;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .Next{
+        display: none;
+    }
+
+    .Prev{
+        display: none;
+    }
+
+
+    /* Futuros */
+    .futuros{
+        display: flex;
+        flex-flow: wrap column;
+        padding: 0.5rem;
+    }
+
+
+    /* Footer */
+
+    footer{
+        display: flex;
+        flex-flow: wrap column;
+        height: fit-content;
+
+    }
+
+    .subscription-aside{
+        padding: 1rem;
+    }
+
+    .subscription-aside h2{
+        font-size: 1rem;
+    }
+
+    .subscription-aside p{
+        font-size: 0.9rem;
+    }
+
+    .telefono-email{
+        padding: 0;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .social-net h3{
+        font-size: 1rem;
+    }
+
+    .siman-logo-footer{
+        padding: 1rem;
+        margin: 0 0 1rem 0;
+        box-sizing: border-box;
+    }
+
+    .Contactos{
+        margin: 0 0 0.5rem 0;
+    }
 }
