@@ -38,6 +38,7 @@ body{
 
 }
 
+
 .announcement{
     width: 80%;
     margin: 2rem 0 1rem 0;
@@ -64,7 +65,11 @@ body{
     
 }
 
-.controls img{
+.controls ul img{
+    display: none;
+}
+
+.siman-logo-header{
     width: 60%;
     margin-left: 2rem;
 }
@@ -266,7 +271,7 @@ body{
     width: 100%;
     margin: 0 0 1rem 0;
     color: var(--second-color);
-    font-size: 80%;
+    font-size: 0.7rem;
 }
 
 /* Pages control */
@@ -472,4 +477,129 @@ footer{
     height: 4rem;
     object-fit: cover;
     overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) and (orientation: portrait){
+    
+    /* Header */
+    .controls{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .siman-logo-header{
+        margin: 0.5rem 0;
+        height: 2rem;
+        width: auto;
+    }
+    
+    .controls ul{
+        gap: 0;
+        padding: 0;
+    }
+
+    .controls ul :nth-child( n+2){
+        display: none;
+    }
+    
+    .controls ul img{
+        display: block;
+        width: 1.8rem;
+        filter: brightness(0) saturate(100%) invert(26%) sepia(90%) saturate(1031%) hue-rotate(328deg) brightness(110%) contrast(90%);
+        cursor: pointer;
+    }
+
+    /* Productos */
+    
+    .descuentos{
+        margin: 2rem;
+    }
+    .search-bar{
+        width: 100%;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .filters{
+        width: 100%;
+        flex-flow: wrap row;
+    }
+
+    .filters button{
+        padding: 0.5rem 2rem;
+        width: 50%;
+    }
+
+    .item{
+        width: 90%;
+
+    }
+
+    .pages{
+        width: 100%;
+    }
+    .pages button{
+        padding: 0.5rem;
+    }
+    .pages p{
+        font-size: 0.7rem;
+    }
+
+        /* Footer */
+
+        footer{
+            display: flex;
+            flex-flow: wrap column;
+            height: fit-content;
+    
+        }
+    
+        .subscription-aside{
+            padding: 1rem;
+        }
+    
+        .subscription-aside h2{
+            font-size: 1rem;
+        }
+    
+        .subscription-aside p{
+            font-size: 0.9rem;
+        }
+    
+        .telefono-email{
+            padding: 0;
+            width: 100%;
+            font-size: 0.8rem;
+        }
+    
+        .social-net h3{
+            font-size: 1rem;
+        }
+    
+        .siman-logo-footer{
+            padding: 1rem;
+            margin: 0 0 1rem 0;
+            box-sizing: border-box;
+        }
+    
+        .Contactos{
+            margin: 0 0 0.5rem 0;
+        }
+}
+
+@media (max-width: 992px) and (orientation: landscape){
+    .search-bar{
+        width: 100%;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .filters{
+        width: 100%;
+        flex-flow: wrap row;
+    }
+
+    .filters button{
+        padding: 0.5rem 2rem;
+        width: 50%;
+    }
 }
