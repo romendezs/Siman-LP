@@ -271,7 +271,7 @@ main h2:nth-child(n+2){
 
 .Prev{
     position: absolute;
-    
+    display: none;
     height: 2rem;
     width: 2rem;
     object-fit:scale-down;
@@ -279,6 +279,7 @@ main h2:nth-child(n+2){
 
 .Next{
     position: absolute;
+    display: none;
     height: 2rem;
     width: 2rem;
 }

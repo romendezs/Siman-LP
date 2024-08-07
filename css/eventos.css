@@ -160,7 +160,7 @@ h1{
 
 .Prev{
     position: absolute;
-    
+    display: none;
     height: 2rem;
     width: 2rem;
     object-fit:scale-down;
@@ -168,6 +168,7 @@ h1{
 
 .Next{
     position: absolute;
+    display: none;
     height: 2rem;
     width: 2rem;
 }
